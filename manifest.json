@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "bookmarker",
+  "description": "Try the bookmarker extension now",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "bookmark.jpeg",
+   "default_popup": "index.htm"
+  },
+ 
+  "permissions": [
+   "tabs","http://localhost/*","activeTab"
+   ],
+   "content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'",
+   "background": {
+    "scripts": ["add.js"]
+  }
+   
+   
+
+   
+
+   }
